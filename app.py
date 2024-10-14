@@ -94,7 +94,7 @@ class CustomScreen(Screen):
     def __init__(self, **kwargs):
         super(CustomScreen, self).__init__(**kwargs)
         with self.canvas.before:
-            Color(0.35, 0.35, 0.4, 1)
+            Color(220, 220, 220, 0.6)
             self.rect = Rectangle(size=self.size, pos=self.pos)
             self.bind(size=self._update_rect, pos=self._update_rect)
 
